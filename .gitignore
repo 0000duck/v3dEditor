@@ -1,0 +1,14 @@
+*.user
+*.blend
+
+.git/
+.vs/
+bin/
+Debug/
+examples/dabrovic-sponza/
+examples/human/
+examples/sanmiguel/
+examples/sibenik/
+projects/bin/
+projects/obj/
+resources/obj/

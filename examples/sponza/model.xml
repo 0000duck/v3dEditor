@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<v3dEditor version="1.0.0">
+  <scene version="1.0.0">
+    <grid enable="0" cellSize="1.000000" halfCellCount="10"></grid>
+    <ssao enable="1" radius="0.100000" threshold="0.001000" depth="1.000000" intensity="3.000000" blurRadius="15.000000" blurSamples="8"></ssao>
+    <shadow enable="1" resolution="2" range="1000.000000" fadeMargin="100.000000" dencity="1.000000" centerOffset="250.000000" boundsBias="1.000000" depthBias="0.000010"></shadow>
+    <glare enable="1" bpThreshold="0.000000" bpOffset="1.000000" blurRadius="8.000000" blurSamples="8" intensity0="2.000000" intensity1="1.000000"></glare>
+    <imageEffect toneMappingEnable="0" fxaaEnable="1"></imageEffect>
+    <misc>
+      <background color="0.100000, 0.100000, 0.100000, 1.000000"></background>
+      <select color="0.900000, 0.600000, 0.000000, 1.000000"></select>
+      <lightShape enable="1" color="0.784000, 0.784000, 0.502000, 1.000000"></lightShape>
+      <meshBounds enable="0" color="0.000000, 0.702000, 0.475000, 1.000000"></meshBounds>
+    </misc>
+    <node name="Scene" ls="1.000000, 1.000000, 1.000000" lr="0.000000, 0.000000, 0.000000, 1.000000" lt="0.000000, 0.000000, 0.000000" attribute="undefined">
+      <node name="Camera" ls="1.000000, 1.000000, 1.000000" lr="0.000000, 0.000000, 0.000000, 1.000000" lt="0.000000, 0.000000, 0.000000" attribute="camera" rotation="0.277939, 0.688601, -0.262198, 0.616304" at="-3.755717, 3.508080, 1.662952" distance="17.000000"></node>
+      <node name="Light" ls="0.100000, 0.100000, 0.100000" lr="0.080469, 0.000000, 0.000000, 0.996757" lt="0.000000, -10.000000, 0.000000" attribute="light" color="1.000000, 1.000000, 1.000000, 1.000000"></node>
+      <node name="Model" ls="1.000000, 1.000000, 1.000000" lr="0.000000, 0.000000, 0.000000, 1.000000" lt="0.000000, 0.000000, 0.000000" attribute="model" filePath="model.skm"></node>
+    </node>
+  </scene>
+</v3dEditor>

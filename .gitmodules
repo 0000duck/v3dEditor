@@ -1,0 +1,9 @@
+[submodule "external/gli"]
+	path = external/gli
+	url = https://github.com/g-truc/gli.git
+[submodule "external/imgui"]
+	path = external/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "external/v3d"]
+	path = external/v3d
+	url = https://github.com/mixberry8/v3d.git

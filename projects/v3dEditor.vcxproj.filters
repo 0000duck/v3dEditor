@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{25ea03ba-c01e-4fd3-9281-aa6cb4696561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\v3dEditor">
+      <UniqueIdentifier>{7bc6db80-c621-4251-8795-31c28c436549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\v3dEditor\private">
+      <UniqueIdentifier>{7265892c-78d3-4ca4-8347-5adedc0165c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\external">
+      <UniqueIdentifier>{479a5b68-b911-407d-a452-2a1a8798b748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\external\imgui">
+      <UniqueIdentifier>{caefd3ad-5fc1-48f1-a0ca-ed17bdf28db3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\v3dEditor\App.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Camera.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Device.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\DeviceContext.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Gui.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\IDeviceContextListener.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Material.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Scene.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Texture.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\IModelSource.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\FbxModelSource.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\GuiWindow.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\FileBrowser.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\GuiPopup.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\GuiFloat.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\ImportDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\InspectorDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\MessageDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\AboutDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\OutlinerDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\AABB.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Plane.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Sphere.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Logger.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\LogDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\FpsDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\BackgroundQueue.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Project.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\BackgroundJobDialog.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\LogControl.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Node.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\ImmediateContext.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\BufferedContainer.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\DebugRenderer.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\DeletingQueue.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\DynamicBuffer.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\DynamicContainer.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\Frustum.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\GraphicsFactory.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\ResourceAllocation.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\ResourceMemory.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\ResourceMemoryManager.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\SamplerFactory.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\TextureManager.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\UpdatingQueue.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\SkeletalMesh.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\private\NodeSelector.h">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\SkeletalModel.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\IMesh.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\IModel.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\Light.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\NodeAttribute.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\IMaterialContainer.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\XmlUtility.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v3dEditor\pch.h">
+      <Filter>source\v3dEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui\imconfig.h">
+      <Filter>source\external\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui\imgui.h">
+      <Filter>source\external\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui\imgui_internal.h">
+      <Filter>source\external\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui\stb_rect_pack.h">
+      <Filter>source\external\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui\stb_textedit.h">
+      <Filter>source\external\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui\stb_truetype.h">
+      <Filter>source\external\imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\v3dEditor\App.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Camera.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Device.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\DeviceContext.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Gui.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\main.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Material.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\pch.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Scene.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Texture.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\FbxModelSource.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\GuiWindow.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\FileBrowser.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\GuiPopup.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\GuiFloat.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\ImportDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\InspectorDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\MessageDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\AboutDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\OutlinerDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\AABB.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Plane.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Sphere.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Logger.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\LogDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\FpsDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\BackgroundQueue.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Project.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\BackgroundJobDialog.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\LogControl.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Node.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\ImmediateContext.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\DebugRenderer.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\DeletingQueue.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\DynamicBuffer.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\Frustum.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\GraphicsFactory.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\ResourceMemory.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\ResourceMemoryManager.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\SamplerFactory.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\TextureManager.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\UpdatingQueue.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\SkeletalMesh.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\NodeSelector.cpp">
+      <Filter>source\v3dEditor\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\SkeletalModel.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Light.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\NodeAttribute.cpp">
+      <Filter>source\v3dEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui\imgui.cpp">
+      <Filter>source\external\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui\imgui_demo.cpp">
+      <Filter>source\external\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui\imgui_draw.cpp">
+      <Filter>source\external\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

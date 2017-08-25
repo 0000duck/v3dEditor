@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{522E45A4-87D9-4EED-8181-9AE6F68C3C86}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>v3dEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(PlatformTarget)\$(Configuration)\v3dEditor\</IntDir>
+    <IncludePath>$(SolutionDir)source;$(SolutionDir)external\v3d\include;$(SolutionDir)external\gli;$(SolutionDir)external\gli\external;$(SolutionDir)external\imgui;$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\v3d\bin\vs2017\$(PlatformTarget)\$(Configuration);$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\lib\vs2015\$(PlatformTarget)\$(Configuration);$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)obj\$(PlatformTarget)\$(Configuration)\v3dEditor\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)source;$(SolutionDir)external\v3d\include;$(SolutionDir)external\gli;$(SolutionDir)external\gli\external;$(SolutionDir)external\imgui;$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\v3d\bin\vs2017\$(PlatformTarget)\$(Configuration);$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\lib\vs2015\$(PlatformTarget)\$(Configuration);$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(PlatformTarget)\$(Configuration)\v3dEditor\</IntDir>
+    <IncludePath>$(SolutionDir)source;$(SolutionDir)external\v3d\include;$(SolutionDir)external\gli;$(SolutionDir)external\gli\external;$(SolutionDir)external\imgui;$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\v3d\bin\vs2017\$(PlatformTarget)\$(Configuration);$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\lib\vs2015\$(PlatformTarget)\$(Configuration);$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)obj\$(PlatformTarget)\$(Configuration)\v3dEditor\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)source;$(SolutionDir)external\v3d\include;$(SolutionDir)external\gli;$(SolutionDir)external\gli\external;$(SolutionDir)external\imgui;$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)external\v3d\bin\vs2017\$(PlatformTarget)\$(Configuration);$(ProgramW6432)\Autodesk\FBX\FBX SDK\2017.0.1\lib\vs2015\$(PlatformTarget)\$(Configuration);$(OutDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdParty;$(SolutionDir)source\v3dCompiler;$(SolutionDir)source\v3dEditor;$(SolutionDir)source\v3dEditor\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Shlwapi.lib;Shell32.lib;xmllite.lib;v3d_static.lib;shaderCompiler.lib;libfbxsdk-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "$(ProjectDir)bin\$(PlatformTarget)\Release\shaderCompiler.dll" "$(OutDir)shaderCompiler.dll"
+copy "$(ProjectDir)bin\$(PlatformTarget)\Release\shaderCompiler.lib" "$(OutDir)shaderCompiler.lib"
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdParty;$(SolutionDir)source\v3dCompiler;$(SolutionDir)source\v3dEditor;$(SolutionDir)source\v3dEditor\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>Shlwapi.lib;Shell32.lib;xmllite.lib;v3d_static.lib;shaderCompiler.lib;libfbxsdk-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "$(ProjectDir)bin\$(PlatformTarget)\Release\shaderCompiler.dll" "$(OutDir)shaderCompiler.dll"
+copy "$(ProjectDir)bin\$(PlatformTarget)\Release\shaderCompiler.lib" "$(OutDir)shaderCompiler.lib"
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdParty;$(SolutionDir)source\v3dCompiler;$(SolutionDir)source\v3dEditor;$(SolutionDir)source\v3dEditor\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Shlwapi.lib;Shell32.lib;xmllite.lib;v3d_static.lib;shaderCompiler.lib;libfbxsdk-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)v3dEditor.exe" "$(SolutionDir)bin\$(PlatformTarget)\" /I /Y
+xcopy "$(OutDir)shaderCompiler.dll" "$(SolutionDir)bin\$(PlatformTarget)\" /I /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdParty;$(SolutionDir)source\v3dCompiler;$(SolutionDir)source\v3dEditor;$(SolutionDir)source\v3dEditor\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Shlwapi.lib;Shell32.lib;xmllite.lib;v3d_static.lib;shaderCompiler.lib;libfbxsdk-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(OutDir)v3dEditor.exe" "$(SolutionDir)bin\$(PlatformTarget)\" /I /Y
+xcopy "$(OutDir)shaderCompiler.dll" "$(SolutionDir)bin\$(PlatformTarget)\" /I /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\external\imgui\imconfig.h" />
+    <ClInclude Include="..\external\imgui\imgui.h" />
+    <ClInclude Include="..\external\imgui\imgui_internal.h" />
+    <ClInclude Include="..\external\imgui\stb_rect_pack.h" />
+    <ClInclude Include="..\external\imgui\stb_textedit.h" />
+    <ClInclude Include="..\external\imgui\stb_truetype.h" />
+    <ClInclude Include="..\source\v3dEditor\AABB.h" />
+    <ClInclude Include="..\source\v3dEditor\AboutDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\App.h" />
+    <ClInclude Include="..\source\v3dEditor\BackgroundJobDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\BackgroundQueue.h" />
+    <ClInclude Include="..\source\v3dEditor\Camera.h" />
+    <ClInclude Include="..\source\v3dEditor\Device.h" />
+    <ClInclude Include="..\source\v3dEditor\DeviceContext.h" />
+    <ClInclude Include="..\source\v3dEditor\FileBrowser.h" />
+    <ClInclude Include="..\source\v3dEditor\FpsDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\Gui.h" />
+    <ClInclude Include="..\source\v3dEditor\GuiFloat.h" />
+    <ClInclude Include="..\source\v3dEditor\GuiPopup.h" />
+    <ClInclude Include="..\source\v3dEditor\GuiWindow.h" />
+    <ClInclude Include="..\source\v3dEditor\IDeviceContextListener.h" />
+    <ClInclude Include="..\source\v3dEditor\IMaterialContainer.h" />
+    <ClInclude Include="..\source\v3dEditor\NodeAttribute.h" />
+    <ClInclude Include="..\source\v3dEditor\IMesh.h" />
+    <ClInclude Include="..\source\v3dEditor\IModel.h" />
+    <ClInclude Include="..\source\v3dEditor\IModelSource.h" />
+    <ClInclude Include="..\source\v3dEditor\ImportDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\InspectorDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\Light.h" />
+    <ClInclude Include="..\source\v3dEditor\LogControl.h" />
+    <ClInclude Include="..\source\v3dEditor\LogDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\Logger.h" />
+    <ClInclude Include="..\source\v3dEditor\Material.h" />
+    <ClInclude Include="..\source\v3dEditor\MessageDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\Node.h" />
+    <ClInclude Include="..\source\v3dEditor\OutlinerDialog.h" />
+    <ClInclude Include="..\source\v3dEditor\Plane.h" />
+    <ClInclude Include="..\source\v3dEditor\private\BufferedContainer.h" />
+    <ClInclude Include="..\source\v3dEditor\private\DebugRenderer.h" />
+    <ClInclude Include="..\source\v3dEditor\private\DeletingQueue.h" />
+    <ClInclude Include="..\source\v3dEditor\private\DynamicBuffer.h" />
+    <ClInclude Include="..\source\v3dEditor\private\DynamicContainer.h" />
+    <ClInclude Include="..\source\v3dEditor\private\Frustum.h" />
+    <ClInclude Include="..\source\v3dEditor\private\GraphicsFactory.h" />
+    <ClInclude Include="..\source\v3dEditor\private\ImmediateContext.h" />
+    <ClInclude Include="..\source\v3dEditor\private\NodeSelector.h" />
+    <ClInclude Include="..\source\v3dEditor\private\ResourceAllocation.h" />
+    <ClInclude Include="..\source\v3dEditor\private\ResourceMemory.h" />
+    <ClInclude Include="..\source\v3dEditor\private\ResourceMemoryManager.h" />
+    <ClInclude Include="..\source\v3dEditor\private\SamplerFactory.h" />
+    <ClInclude Include="..\source\v3dEditor\private\TextureManager.h" />
+    <ClInclude Include="..\source\v3dEditor\private\UpdatingQueue.h" />
+    <ClInclude Include="..\source\v3dEditor\Project.h" />
+    <ClInclude Include="..\source\v3dEditor\SkeletalMesh.h" />
+    <ClInclude Include="..\source\v3dEditor\SkeletalModel.h" />
+    <ClInclude Include="..\source\v3dEditor\FbxModelSource.h" />
+    <ClInclude Include="..\source\v3dEditor\pch.h" />
+    <ClInclude Include="..\source\v3dEditor\Scene.h" />
+    <ClInclude Include="..\source\v3dEditor\Sphere.h" />
+    <ClInclude Include="..\source\v3dEditor\Texture.h" />
+    <ClInclude Include="..\source\v3dEditor\XmlUtility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\external\imgui\imgui.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)external\imgui\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui\imgui_demo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)external\imgui\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui\imgui_draw.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)external\imgui\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)external\imgui\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\AABB.cpp" />
+    <ClCompile Include="..\source\v3dEditor\AboutDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\App.cpp" />
+    <ClCompile Include="..\source\v3dEditor\BackgroundJobDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\BackgroundQueue.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Camera.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Device.cpp" />
+    <ClCompile Include="..\source\v3dEditor\DeviceContext.cpp" />
+    <ClCompile Include="..\source\v3dEditor\FileBrowser.cpp" />
+    <ClCompile Include="..\source\v3dEditor\FpsDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Gui.cpp" />
+    <ClCompile Include="..\source\v3dEditor\GuiFloat.cpp" />
+    <ClCompile Include="..\source\v3dEditor\GuiPopup.cpp" />
+    <ClCompile Include="..\source\v3dEditor\GuiWindow.cpp" />
+    <ClCompile Include="..\source\v3dEditor\ImportDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\InspectorDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Light.cpp" />
+    <ClCompile Include="..\source\v3dEditor\LogControl.cpp" />
+    <ClCompile Include="..\source\v3dEditor\LogDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Logger.cpp" />
+    <ClCompile Include="..\source\v3dEditor\main.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Material.cpp" />
+    <ClCompile Include="..\source\v3dEditor\MessageDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Node.cpp" />
+    <ClCompile Include="..\source\v3dEditor\NodeAttribute.cpp" />
+    <ClCompile Include="..\source\v3dEditor\OutlinerDialog.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Plane.cpp" />
+    <ClCompile Include="..\source\v3dEditor\private\DebugRenderer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\DeletingQueue.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\DynamicBuffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\Frustum.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\GraphicsFactory.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\ImmediateContext.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\NodeSelector.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\ResourceMemory.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\ResourceMemoryManager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\SamplerFactory.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\TextureManager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\private\UpdatingQueue.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)private\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)private\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Project.cpp" />
+    <ClCompile Include="..\source\v3dEditor\SkeletalMesh.cpp" />
+    <ClCompile Include="..\source\v3dEditor\SkeletalModel.cpp" />
+    <ClCompile Include="..\source\v3dEditor\FbxModelSource.cpp" />
+    <ClCompile Include="..\source\v3dEditor\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\source\v3dEditor\Scene.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Sphere.cpp" />
+    <ClCompile Include="..\source\v3dEditor\Texture.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
