@@ -1476,9 +1476,9 @@ namespace ve {
 								IModelSource::Vertex** ppVertex = ppCombineVertex;
 								IModelSource::Vertex** ppVertexEnd = ppVertex + combineVertexCount;
 
-								glm::vec3 combineNormal;
-								glm::vec3 combineTangent;
-								glm::vec3 combineBinormal;
+								glm::vec3 combineNormal = glm::vec3(0.0f);
+								glm::vec3 combineTangent = glm::vec3(0.0f);
+								glm::vec3 combineBinormal = glm::vec3(0.0f);
 
 								while (ppVertex != ppVertexEnd)
 								{
