@@ -715,7 +715,7 @@ namespace ve {
 		lightNode->SetName(L"Light");
 		Node::SetAttribute(lightNode, m_Light);
 
-		lightNode->SetLocalTransform(glm::vec3(0.5f), glm::angleAxis(glm::radians(45.0f), glm::normalize(glm::vec3(1.0f, 0.0f, 1.0f))), glm::vec3(10.0f, -10.0f, -10.0f));
+		lightNode->SetLocalTransform(glm::vec3(0.5f), glm::angleAxis(glm::radians(10.0f), glm::normalize(glm::vec3(1.0f, 0.0f, 1.0f))), glm::vec3(10.0f, -20.0f, -10.0f));
 
 		// ----------------------------------------------------------------------------------------------------
 		// ノードセレクター
