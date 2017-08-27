@@ -8,6 +8,8 @@
 #include "Texture.h"
 #include "IMesh.h"
 
+//#define VE_MATERIAL_NO_TEXTURE
+
 namespace ve {
 
 	/***********************************/
@@ -118,6 +120,7 @@ namespace ve {
 
 		void SetTexture(Material::TEXTURE_TYPE type, TexturePtr texture, uint32_t shaderBit)
 		{
+#ifndef VE_MATERIAL_NO_TEXTURE
 			if (texture != nullptr)
 			{
 				if (textures[curTexturesIndex][type] != nullptr)
@@ -162,6 +165,7 @@ namespace ve {
 
 				VE_RESET_BIT(shaderFlags, shaderBit);
 			}
+#endif //VE_MATERIAL_NO_TEXTURE
 		}
 
 		VE_DECLARE_ALLOCATOR
