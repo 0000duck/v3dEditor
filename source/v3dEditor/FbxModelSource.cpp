@@ -270,9 +270,9 @@ namespace ve {
 		FbxEuler::EOrder fbxRotationOrder;
 		pFbxNode->GetRotationOrder(FbxNode::eSourcePivot, fbxRotationOrder);
 
-		glm::mat4 xMat = glm::rotate(glm::mat4(), glm::radians<float>(static_cast<float>(localRotation.mData[0])), glm::vec3(1.0f, 0.0f, 0.0f));
-		glm::mat4 yMat = glm::rotate(glm::mat4(), glm::radians<float>(static_cast<float>(localRotation.mData[1])), glm::vec3(0.0f, 1.0f, 0.0f));
-		glm::mat4 zMat = glm::rotate(glm::mat4(), glm::radians<float>(static_cast<float>(localRotation.mData[2])), glm::vec3(0.0f, 0.0f, 1.0f));
+		glm::mat4 xMat = glm::rotate(glm::mat4(1.0f), glm::radians<float>(static_cast<float>(localRotation.mData[0])), glm::vec3(1.0f, 0.0f, 0.0f));
+		glm::mat4 yMat = glm::rotate(glm::mat4(1.0f), glm::radians<float>(static_cast<float>(localRotation.mData[1])), glm::vec3(0.0f, 1.0f, 0.0f));
+		glm::mat4 zMat = glm::rotate(glm::mat4(1.0f), glm::radians<float>(static_cast<float>(localRotation.mData[2])), glm::vec3(0.0f, 0.0f, 1.0f));
 		glm::mat4 rotMat;
 
 		switch (fbxRotationOrder)
@@ -878,13 +878,10 @@ namespace ve {
 				Vertex* pVertex = &vertices[j];
 
 				pVertex->pos = controlPoints[controlPointIndex];
-
-				pVertex->uv.x = 0.0f;
-				pVertex->uv.y = 0.0f;
-
-				pVertex->normal.x = 0.0f;
-				pVertex->normal.y = 0.0f;
-				pVertex->normal.z = 0.0f;
+				pVertex->uv = glm::vec2(0.0f);
+				pVertex->tangent = glm::vec3(0.0f);
+				pVertex->binormal = glm::vec3(0.0f);
+				pVertex->normal = glm::vec3(0.0f);
 
 				if (vertexWeightEnable == true)
 				{
